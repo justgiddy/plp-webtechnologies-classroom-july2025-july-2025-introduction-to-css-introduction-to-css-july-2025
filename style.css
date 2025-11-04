@@ -1,0 +1,170 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #2c3e50;
+  padding: 1rem;
+  /* Box Model Demo: Adding shadow to visualize the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  /* Box Model Demo: margin for spacing between items */
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  /* Box Model Demo: padding to create clickable area */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+/* Main content sections */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  /* Box Model Demo: margin for vertical spacing between sections */
+  margin-bottom: 3rem;
+}
+
+/* Hero section */
+#hero {
+  text-align: center;
+  /* Box Model Demo: padding for internal spacing */
+  padding: 3rem 1rem;
+  background-color: #3498db;
+  color: white;
+  /* Box Model Demo: rounded corners */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Feature cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  /* Box Model Demo: padding around the container */
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  /* Box Model Demo: comprehensive use of box model properties */
+  padding: 2rem;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* Box Model Demo: adding shadow to visualize the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #2c3e50;
+  /* Box Model Demo: margin for spacing */
+  margin-bottom: 1rem;
+}
+
+.card p {
+  /* Box Model Demo: margin for paragraph spacing */
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  /* Box Model Demo: padding to create button size */
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Content boxes */
+.content-box,
+.contact-box {
+  background-color: white;
+  /* Box Model Demo: comprehensive box model usage */
+  padding: 2rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-box p,
+.contact-box p {
+  /* Box Model Demo: margin between paragraphs */
+  margin-bottom: 1rem;
+}
+
+.content-box p:last-child,
+.contact-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section headings */
+h2 {
+  color: #2c3e50;
+  /* Box Model Demo: margin for spacing */
+  margin-bottom: 1.5rem;
+  /* Box Model Demo: padding and border for visual emphasis */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  /* Box Model Demo: padding for spacing */
+  padding: 1rem;
+  /* Box Model Demo: margin to separate from main content */
+  margin-top: 3rem;
+}
